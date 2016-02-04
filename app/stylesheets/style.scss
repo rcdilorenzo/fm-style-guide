@@ -1,0 +1,47 @@
+@import "components/base";
+
+body {
+  background-color: #F4F4F4;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 25px;
+}
+
+.header--primary {
+  background-color: $color__three;
+  padding: 25px;
+  color: lighten($color__two, 10%);
+  h1 {
+    margin: 0;
+  }
+}
+
+/* Color Swatches */
+.sgcolors {
+  @extend .grid;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+.sgcolors__item {
+  @extend .grid__col;
+  @extend .grid__col--1-of-5;
+  height: 100px;
+}
+.sgcolors__item--one {
+  background-color: $color__one;
+}
+.sgcolors__item--two {
+  background-color: $color__two;
+}
+.sgcolors__item--three {
+  background-color: $color__three;
+}
+.sgcolors__item--four {
+  background-color: $color__four;
+}
+.sgcolors__item--five {
+  background-color: $color__five;
+}

@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    != LRScript
+  body
+    header.header--primary
+      h1 FM Style Guide
+      i A style guide for an upcoming project
+    main.grid
+      .grid__col.grid__col--2-of-12.offset--m
+        nav.multiselect
+          ul.multiselect__list
+            li.multiselect__item
+              a.multiselect__item__link.multiselect__item__link--first(href="/") Overview
+            li.multiselect__item
+              a.multiselect__item__link(href="/components/navigation") Navigation
+            li.multiselect__item
+              a.multiselect__item__link(href="/components/tables") Tables
+            li.multiselect__item
+              a.multiselect__item__link.multiselect__item__link--last(href="/components/forms") Forms
+      .grid__col.grid__col--10-of-12
+        block content
+        script(src="/javascripts/links.js")
+
