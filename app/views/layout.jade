@@ -2,7 +2,10 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/vendor/github-gist.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/vendor/highlight.pack.js")
+    script hljs.initHighlightingOnLoad();
     != LRScript
   body
     header.header--primary
@@ -22,5 +25,8 @@ html
               a.multiselect__item__link.multiselect__item__link--last(href="/components/forms") Forms
       .grid__col.grid__col--10-of-12
         block content
+        script(src="/javascripts/vendor/beautify.js")
+        script(src="/javascripts/vendor/beautify-html.js")
+        script(src="/javascripts/style_guide.js")
         script(src="/javascripts/links.js")
 

@@ -19,6 +19,23 @@ main {
   }
 }
 
+.sgexample {
+  border: 2px solid #CCC;
+  background: white;
+  border-radius: 5px;
+}
+
+.sgexample__demo {
+  padding: 25px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #CCC;
+}
+
+.sgexample__code {
+  padding: 5px 25px;
+}
+
 /* Color Swatches */
 .sgcolors {
   @extend .grid;
