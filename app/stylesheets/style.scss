@@ -1,7 +1,7 @@
 @import "components/base";
 
 body {
-  background-color: #F4F4F4;
+  background-color: $color__five;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
 }
@@ -11,9 +11,9 @@ main {
 }
 
 .header--primary {
-  background-color: $color__three;
+  background-color: $color__one;
   padding: 25px;
-  color: lighten($color__two, 10%);
+  color: $color__five;
   h1 {
     margin: 0;
   }
@@ -45,20 +45,47 @@ main {
 .sgcolors__item {
   @extend .grid__col;
   @extend .grid__col--1-of-5;
+  padding: 20px;
+}
+.sgcolors__color {
   height: 100px;
 }
-.sgcolors__item--one {
+.sgcolors__color--one {
   background-color: $color__one;
 }
-.sgcolors__item--two {
+.sgcolors__color--two {
   background-color: $color__two;
 }
-.sgcolors__item--three {
+.sgcolors__color--three {
   background-color: $color__three;
 }
-.sgcolors__item--four {
+.sgcolors__color--four {
   background-color: $color__four;
 }
-.sgcolors__item--five {
+.sgcolors__color--five {
   background-color: $color__five;
+  border: 10px solid;
+  border-color: $color__four;
+  border-bottom: none;
+}
+.sgcolors__code {
+  padding: 15px;
+  text-align: center;
+  border: 10px solid;
+}
+.sgcolors__code--one {
+  border-color: $color__one;
+}
+.sgcolors__code--two {
+  border-color: $color__two;
+}
+.sgcolors__code--three {
+  border-color: $color__three;
+}
+.sgcolors__code--four {
+  border-color: $color__four;
+}
+.sgcolors__code--five {
+  border-color: $color__four;
+  border-top: none;
 }
