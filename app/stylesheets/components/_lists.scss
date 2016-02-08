@@ -1,72 +1,49 @@
 $multiselect__color: $color__one;
+$multiselect__border: 2px solid lighten($color__four, 75%);
+$multiselect__border--separator: 2px solid lighten($color__four, 75%);
+
 
 
 .multiselect {
-  // max-width: 200px;
+  max-width: 250px;
   border-radius: 5px;
 }
 .multiselect__list {
   margin: 0;
-  &:hover .multiselect__item__link--active {
-    background-color: transparent;
-    color: $color__one;
-  }
-  &:hover .multiselect__item__link--active:after {
-    border-left: 50px solid transparent;
-  }
-  &:hover .multiselect__item__link--active:hover {
-    background-color: $multiselect__color;
-    color: $color__five;
-  }
-  &:hover .multiselect__item__link--active:hover:after {
-    border-left: 50px solid $multiselect__color;
-  }
 }
 .multiselect__item {
   list-style-type: none;
   margin-left: -40px;
-  overflow: hidden;
 }
 .multiselect__item__link {
-  @extend .sgfonts__adelle;
-  text-transform: uppercase;;
+  @extend .sgfonts__omnes;
   display: block;
-  padding: 10px 10px 10px 20px;
+  padding: 15px;
   text-decoration: none;
-  color: $color__one;
-  border-bottom: 3px solid transparent;
-  max-width: 150px;
-  position: relative;
-  &:after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 50px solid transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    left: 100%;
-    z-index: 2;
+  color: $color__black;
+  border-left: $multiselect__border;
+  border-right: $multiselect__border;
+  border-bottom: $multiselect__border--separator;
+  &:hover{
+
   }
   &.multiselect__item__link--active {
     background-color: $multiselect__color;
+    border-left: $multiselect__color;
+    border-right: $multiselect__color;
+    border-top: $multiselect__color;
+    border-bottom: $multiselect__color;
     color: $color__five;
-  }
-  &.multiselect__item__link--active:after {
-	border-left: 50px solid $multiselect__color;
-  }
-  &:hover {
-    background-color: $multiselect__color;
-    color: $color__five;
-  }
-  &:hover:after {
-    border-left: 50px solid $multiselect__color;
+    @extend .sgfonts__adelle-bold;
   }
 }
 .multiselect__item__link--first {
+  border-top: $multiselect__border;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .multiselect__item__link--last {
+  border-bottom: $multiselect__border;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
