@@ -4,6 +4,9 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/vendor/github-gist.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://use.typekit.net/mwu8sin.js")
+    script(type="text/javascript").
+      try{Typekit.load({ async: true });}catch(e){}
     script(src="/javascripts/vendor/highlight.pack.js")
     script hljs.initHighlightingOnLoad();
     != LRScript
@@ -19,6 +22,8 @@ html
               a.multiselect__item__link.multiselect__item__link--first(href="/") Overview
             li.multiselect__item
               a.multiselect__item__link(href="/components/colors") Colors
+            li.multiselect__item
+              a.multiselect__item__link(href="/components/fonts") Fonts
             li.multiselect__item
               a.multiselect__item__link(href="/components/navigation") Navigation
             li.multiselect__item

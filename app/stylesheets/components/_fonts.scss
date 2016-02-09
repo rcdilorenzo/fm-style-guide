@@ -1,0 +1,50 @@
+$font__heading: "adelle-sans";
+$font__paragraph: "omnes-pro";
+
+@mixin font-heading($size: 1em, $style: normal, $weight: 600, $decoration: none) {
+  font-family: $font__heading, sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  text-decoration: $decoration;
+}
+
+@mixin font-paragraph($size: 1em, $weight: 400) {
+  font-family: $font__paragraph, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+
+body {
+  @include font-paragraph;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  line-height: 2em;
+}
+h1 { @include font-heading(2.2em, bold); }
+h2 { @include font-heading(1.8em, bold); }
+h3 { @include font-heading(1.6em, bold); }
+h3 { @include font-heading(1.4em); }
+h4 { @include font-heading(1.2em); }
+h5 { @include font-heading(1.1em, normal, 600, underline); }
+h6 { @include font-heading(1em, normal, 400, underline); }
+p {
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+blockquote {
+  @include font-paragraph(1em, 300);
+  line-height: 1.6em;
+  font-size: 1.1em;
+  border-left: 5px solid $color__one;
+  padding: 5px 100px 5px 10px;
+}
