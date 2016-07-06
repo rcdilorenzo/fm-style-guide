@@ -2,4 +2,21 @@ extends ../layout
 
 block content
   h1 Forms
+  
+  .sgexample
+    .sgexample__demo
+      .form
+        .form__title.form__title--inline
+          | Login
+        .form__errors.form__errors--inline
+          | Error: Username and password required.
+        .input__group
+          label.input__label(for="username") Username
+          input.input.input--text(type="text")
+        .input__group
+          label.input__label(for="password") Password
+          input.input.input--text(type="password")
+        .input__buttongroup
+          button.button--primary Login
+        
 

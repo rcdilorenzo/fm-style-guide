@@ -1,0 +1,21 @@
+@mixin button($button__color: #555) {
+  @include font-paragraph;
+  padding: 3px 10px;
+  background: white;
+  border: 2px solid $button__color;
+  border-radius: 5px;
+  color: $button__color;
+  &:hover {
+    background-color: $button__color;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.button {
+  @include button;
+}
+
+.button--primary {
+  @include button($color__two);
+}

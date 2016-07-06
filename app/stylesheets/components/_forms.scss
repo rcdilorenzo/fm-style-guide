@@ -1,0 +1,51 @@
+$form__marginleft: 150px;
+
+@mixin inline-element($margin: 10px) {
+  display: inline-block;
+  margin-left: $form__marginleft + $margin;
+}
+
+.form__errors {
+  color: red;
+  padding: 5px 0px;
+}
+
+.form__errors--inline {
+  @include inline-element;
+}
+
+.form__title--inline {
+  @include inline-element;
+  @extend h3;
+  display: block;
+  line-height: 18pt;
+}
+
+.input__group {
+  display: block;
+  margin: 5px 0px;
+  .input__label {
+    display: inline-block;
+    text-align: right;
+    width: $form__marginleft;
+  }
+  .input {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.input__buttongroup {
+  @include inline-element;
+}
+
+.input--text {
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  padding: 4px;
+  @include font-paragraph(11pt);
+  &:focus {
+    outline: none;
+    border-color: #AAA;
+  }
+}
