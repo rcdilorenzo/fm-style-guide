@@ -1,11 +1,8 @@
-.navigationbar__wrapper {
-  border-bottom: 2px solid $color__two;
-}
-
 .navigationbar {
   margin: 0 auto;
   height: 60px;
-  max-width: 900px;
+  max-width: 800px;
+  border-bottom: 2px solid $color__two;
 }
 
 .navigationbar h1 a {
@@ -41,12 +38,12 @@
   background-color: $color__two;
 }
 
-.navigationbar__wrapper--inverted {
+.navigationbar--inverted {
   border-bottom-color: white;
-}
 
-.navigationbar--inverted h1 a {
-  color: white;
+  h1 a {
+    color: white;
+  }
 }
 
 .navigationbar__links {
