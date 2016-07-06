@@ -19,4 +19,20 @@ block content
         .input__buttongroup
           button.button--primary Login
         
+  .sgexample
+    .sgexample__demo
+      .body--inverted
+        .form
+          .form__title.form__title--inline.text--inverted
+            | Login
+          .form__errors.form__errors--inline.form__errors--inverted
+            | Error: Username and password required.
+          .input__group
+            label.input__label.text--inverted(for="username") Username
+            input.input.input--text.input--inverted(type="text")
+          .input__group
+            label.input__label.text--inverted(for="password") Password
+            input.input.input--text.input--inverted(type="password")
+          .input__buttongroup
+            button.button--inverted Login
 
