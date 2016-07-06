@@ -2,3 +2,23 @@ extends ../layout
 
 block content
   h1 Tables
+  
+  .sgexample
+    .sgexample__demo
+      table.table.table--fill
+        thead.table__header
+          th Text
+          th Color
+          th Actions
+        tbody.table__body
+          tr.table__row
+            td Completed
+            td Green
+            td
+              a(href="#") Delete
+          tr.table__row
+            td Neglected
+            td Red
+            td
+              a(href="#") Delete
+            

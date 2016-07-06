@@ -40,3 +40,35 @@ $multiselect__border--separator: 1px solid #DDD;
   border-bottom-right-radius: 5px;
   border-bottom: $multiselect__border;
 }
+
+
+/* Tables */
+
+$table__headercolor: $color__two;
+$table__bordercolor: $color__three;
+
+.table {
+  border-collapse: collapse;
+}
+
+.table--fill {
+  width: 100%;
+}
+
+.table__header th {
+  @include font-heading;
+  padding: 5px 8px;
+  color: white;
+  background-color: $table__headercolor;
+  border: 1px solid darken($table__bordercolor, 20%);
+}
+
+.table__row {
+  margin: 0px;
+}
+
+.table__row td {
+  padding: 5px 8px;
+  margin: 0px;
+  border: 1px solid $table__bordercolor;
+}
