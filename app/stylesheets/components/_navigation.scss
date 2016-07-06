@@ -1,0 +1,66 @@
+.navigationbar__wrapper {
+  border-bottom: 2px solid $color__two;
+}
+
+.navigationbar {
+  margin: 0 auto;
+  height: 60px;
+  max-width: 900px;
+}
+
+.navigationbar h1 a {
+  float: left;
+  padding-left: 10px;
+  font-size: 20pt;
+  color: $color__two;
+  text-decoration: none;
+  line-height: 55px;
+}
+
+.navigationbar__links {
+  float: right;
+}
+
+.navigationbar__link {
+  list-style-type: none;
+  float: left;
+  a {
+    color: $color__two;
+    text-decoration: none;
+    padding: 21px 20px;
+  }
+  a:hover {
+    background-color: $color__two;
+    color: white;
+  }
+}
+
+/* Inverted */
+
+.body--inverted {
+  background-color: $color__two;
+}
+
+.navigationbar__wrapper--inverted {
+  border-bottom-color: white;
+}
+
+.navigationbar--inverted h1 a {
+  color: white;
+}
+
+.navigationbar__links {
+  float: right;
+}
+
+.link--inverted {
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 21px 20px;
+  }
+  a:hover {
+    background-color: white;
+    color: $color__two;
+  }
+}

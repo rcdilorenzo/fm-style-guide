@@ -22,6 +22,8 @@ main {
   border: 2px solid #CCC;
   background: white;
   border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .sgexample__demo {
@@ -29,6 +31,10 @@ main {
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 2px solid #CCC;
+}
+
+.sgexample__demo .body--inverted {
+  padding: 10px;
 }
 
 .sgexample__code {
@@ -135,7 +141,6 @@ main {
 }
 .sgtypography__item {
   @extend .grid__col;
-  @extend .grid__col--1-of-1;
   padding: 20px;
 }
 .sgtypography__header {
