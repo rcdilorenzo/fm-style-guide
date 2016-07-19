@@ -14,8 +14,7 @@ $multiselect__border--separator: 1px solid #DDD;
   list-style-type: none;
   margin-left: -40px;
 }
-.multiselect__item__link {
-  display: block;
+.multiselect__item__link { display: block;
   padding: 10px;
   text-decoration: none;
   color: $color__black;
@@ -71,4 +70,28 @@ $table__bordercolor: $color__three;
   padding: 5px 8px;
   margin: 0px;
   border: 1px solid $table__bordercolor;
+}
+
+/* Table Actions */
+
+.table__cell--actions {
+  padding: 0px !important;
+}
+
+.table__actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+  outline: 1px solid black;
+}
+
+.table__action {
+  flex: 1 1 auto;
+  align-self: auto;
+  text-align: center;
+  padding: 5px 0px;
+  text-decoration: none;
 }

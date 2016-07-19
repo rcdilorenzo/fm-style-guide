@@ -10,15 +10,24 @@ block content
           th Text
           th Color
           th Actions
+          th
         tbody.table__body
           tr.table__row
             td Completed
             td Green
-            td
-              a(href="#") Delete
+            td.table__cell--actions(width="100px")
+              .table__actions
+                a.table__action(href="#",style="background-color: blue;") Edit
+                a.table__action(href="#",style="background-color: red;") Delete
+            td.table__cell--actions(width="100px")
+              .table__actions
+                a.table__action(href="#",style="background-color: green;") Export
           tr.table__row
             td Neglected
             td Red
-            td
-              a(href="#") Delete
-            
+            td.table__cell--actions(width="100px")
+              .table__actions
+                a.table__action(href="#",style="background-color: red;") Delete
+            td.table__cell--actions(width="100px")
+              .table__actions
+                a.table__action(href="#",style="background-color: green;") Export
