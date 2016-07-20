@@ -17,17 +17,27 @@ block content
             td Green
             td.table__cell--actions(width="100px")
               .table__actions
-                a.table__action(href="#",style="background-color: blue;") Edit
-                a.table__action(href="#",style="background-color: red;") Delete
+                a.table__action.table__action--dark(href="#",style="background-color: blue;") Edit
+                a.table__action.table__action--dark.background--negative(href="#") Delete
             td.table__cell--actions(width="100px")
               .table__actions
-                a.table__action(href="#",style="background-color: green;") Export
+                a.table__action.table__action--dark.background--positive(href="#") Export
           tr.table__row
             td Neglected
             td Red
             td.table__cell--actions(width="100px")
               .table__actions
-                a.table__action(href="#",style="background-color: red;") Delete
+                a.table__action.table__action--dark.background--negative(href="#") Delete
             td.table__cell--actions(width="100px")
               .table__actions
-                a.table__action(href="#",style="background-color: green;") Export
+                a.table__action.table__action--dark.background--positive(href="#") Export
+          tr.table__row
+            td
+              input.input.input--text.input--cell(type="text",value="Excused")
+            td
+              input.input.input--text.input--cell.floatleft(type="text",value="Red",style="width: 100px;")
+              span.floatright.colorswatch.background--negative
+            td.table__cell--actions(width="100px")
+              .table__actions.table__actions--editing
+                a.table__action.table__action--dark.background--positive(href="#") Save
+            td

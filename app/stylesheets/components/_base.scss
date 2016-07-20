@@ -1,9 +1,9 @@
 @import "components/colors";
 @import "components/fonts";
 @import "components/grid";
-@import "components/lists";
 @import "components/navigation";
 @import "components/forms";
+@import "components/lists";
 @import "components/buttons";
 @import "components/messages";
 
@@ -13,4 +13,12 @@
 
 .text--inverted {
   color: white;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
 }

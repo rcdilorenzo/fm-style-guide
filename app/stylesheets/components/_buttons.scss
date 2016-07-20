@@ -23,3 +23,11 @@
 .button--inverted {
   @include button(white, $color__two);
 }
+
+.button--positive {
+  @include button($color__positive);
+}
+
+.button--negative {
+  @include button($color__negative);
+}

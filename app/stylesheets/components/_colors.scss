@@ -4,3 +4,19 @@ $color__three: #003459; // prussian blue
 $color__four: #0F2030;  // firefly
 $color__five: #F9FDFF;  // ghost white
 $color__black: #0F2030; // firefly
+
+$color__positive: #43B839;
+$color__negative: #E5444B;
+
+.background--positive {
+  background-color: $color__positive;
+}
+
+.background--negative {
+  background-color: $color__negative;
+}
+
+.colorswatch {
+  width: 20px;
+  height: 20px;
+}
